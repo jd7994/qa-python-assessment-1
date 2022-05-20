@@ -280,7 +280,7 @@ def nine(input):
 	bertsplit = realinput.split("bert")
 	return bertsplit[1]
 	
-print(nine("imbertpossiblebert"))
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
@@ -309,7 +309,15 @@ print(nine("imbertpossiblebert"))
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
+	if "False" in input:
+		rinput = input.split(",")
+		ans = []
+		for i in range(0, len(rinput)):
+			if rinput[i] == "False":
+				if rinput[i-2] not in ans:
+					ans.append(rinput[i-2])
+		return ans
 	return []
-
+print(ten("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
