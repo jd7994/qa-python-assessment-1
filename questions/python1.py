@@ -148,7 +148,11 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	dum = range(1, input + 1)
+	ans = 1
+	for i in dum:
+		ans = ans * i
+	return ans
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
