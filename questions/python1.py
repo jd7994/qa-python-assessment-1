@@ -268,9 +268,19 @@ def eight(arg1):
 	
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
+#this only works with two berts
 def nine(input):
-	return ""
-
+	realinput = input.lower()
+	bertcount = realinput.count("bert")
+	if bertcount < 2:
+		return ""
+	if realinput[0:5] == "bert":
+		bertsplit = realinput.split("bert")
+		return bertsplit[0]
+	bertsplit = realinput.split("bert")
+	return bertsplit[1]
+	
+print(nine("imbertpossiblebert"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
