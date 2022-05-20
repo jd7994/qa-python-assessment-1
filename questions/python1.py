@@ -213,7 +213,7 @@ def seven(inputString, char):
 
 	# <QUESTION 8>
 
-    # Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
+    # Given a string, seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
 
 	# String example = "55 72 86"
 	
@@ -234,7 +234,15 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	nums = arg1.split(" ")
+	ans = 0
+	for i in range(0, len(nums)):
+		temp = 0
+		for j in range(0, len(nums[i])):
+			temp += int(nums[i][j])
+		if temp > ans:
+			ans = temp
+	return ans
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
