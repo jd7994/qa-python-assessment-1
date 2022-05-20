@@ -37,16 +37,12 @@
 
 def one(input1, input2):
 	if len(input1) > len(input2):
-		print(input1)
 		return input1
-		
 	elif len(input1) < len(input2):
-		print(input2)
 		return input2
 	else:
-		print(input1 + " " + input2)
 		return input1 + " " + input2
-one("harry", "paul")
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 2>
@@ -69,6 +65,12 @@ one("harry", "paul")
 	# No hints for this question
 
 def two(arg1):
+	if arg1%3==0 and arg1%5==0:
+		return "fizzbuzz"
+	elif arg1%3==0:
+		return "fizz"
+	elif arg1%5==0:
+		return"buzz"
 	return "null"
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
